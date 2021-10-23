@@ -3,13 +3,13 @@ const DATA_CACHE_NAME = "data-cache-v1";
 
 var urlsToCache = [
   "/",
-  "/index.html",
-  "/db.js",
-  "/index.js",
-  "/styles.css",
-  "/manifest.webmanifest",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png"
+	"/index.html",
+	"/index.js",
+	"/db.js",
+	"/manifest.webmanifest",
+	"/styles.css",
+	"/icons/icon-192x192.png",
+	"/icons/icon-512x512.png",
 ];
 
 self.addEventListener("install", function(event) {
@@ -66,19 +66,8 @@ self.addEventListener("fetch", function(event) {
     return;
   }
 
-  // event.respondWith(
-  //   fetch(event.request).catch(function() {
-  //     return caches.match(event.request).then(function(response) {
-  //       if (response) {
-  //         return response;
-  //       } else if (event.request.headers.get("accept").includes("text/html")) {
-  //         // return the cached home page for all requests for html pages
-  //         return caches.match("/");
-  //       }
-  //     });
-  //   })
-  // );
-
+  
+ 
   event.respondWith(
 		caches.open(CACHE_NAME).then((cache) => {
 			return cache.match(event.request).then((response) => {
@@ -86,6 +75,8 @@ self.addEventListener("fetch", function(event) {
 			});
 		})
 	);
+
+  
 
 });
 
