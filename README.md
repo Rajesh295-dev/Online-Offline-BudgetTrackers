@@ -19,7 +19,7 @@ This app will let to add expenses and deposits to their budget with or without a
 ```
 
 ## Deployed Heroku Link:
- ### [Online/Offline Budget Trackers]()
+ ### [Online/Offline Budget Trackers](https://agile-sea-84760.herokuapp.com)
 
 
 ## Screenshots:
@@ -48,7 +48,7 @@ This app will let to add expenses and deposits to their budget with or without a
 
 
 ## Links :
-* Link for the deployed application on heroku [Online/Offline Budget Trackers]()
+* Link for the deployed application on heroku [Online/Offline Budget Trackers](https://agile-sea-84760.herokuapp.com)
 * Link for the Github repository [Host by Github](https://github.com/Rajesh295-dev/Online-Offline-BudgetTrackers)
 ## Contributor:
 
