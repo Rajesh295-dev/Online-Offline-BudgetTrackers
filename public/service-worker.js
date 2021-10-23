@@ -1,17 +1,15 @@
-
 var CACHE_NAME = "my-site-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
 var urlsToCache = [
   "/",
-  "./index.html",
+  "/index.html",
   "/db.js",
   "/index.js",
-  "/manifest.json",
   "/styles.css",
+  "/manifest.webmanifest",
   "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
-  "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
+  "/icons/icon-512x512.png"
 ];
 
 self.addEventListener("install", function(event) {
@@ -68,18 +66,27 @@ self.addEventListener("fetch", function(event) {
     return;
   }
 
+  // event.respondWith(
+  //   fetch(event.request).catch(function() {
+  //     return caches.match(event.request).then(function(response) {
+  //       if (response) {
+  //         return response;
+  //       } else if (event.request.headers.get("accept").includes("text/html")) {
+  //         // return the cached home page for all requests for html pages
+  //         return caches.match("/");
+  //       }
+  //     });
+  //   })
+  // );
+
   event.respondWith(
-    fetch(event.request).catch(function() {
-      return caches.match(event.request).then(function(response) {
-        if (response) {
-          return response;
-        } else if (event.request.headers.get("accept").includes("text/html")) {
-          // return the cached home page for all requests for html pages
-          return caches.match("/");
-        }
-      });
-    })
-  );
+		caches.open(CACHE_NAME).then((cache) => {
+			return cache.match(event.request).then((response) => {
+				return response || fetch(event.request);
+			});
+		})
+	);
+
 });
 
 
