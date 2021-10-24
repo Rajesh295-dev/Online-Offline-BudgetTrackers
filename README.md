@@ -22,21 +22,20 @@ This app will let to add expenses and deposits to their budget with or without a
  ### [Online/Offline Budget Trackers](https://agile-sea-84760.herokuapp.com)
 
 
-## Screenshots:
-  ### Home page
- ![](./assets/homePage.png) 
+# Screenshots:
+  ## Budget Tracker App's overview
+ ![](./assets/budgetTracker.png) 
 
- ### Dashboard page
- ![](./assets/dashboardPage.png) 
+ ## Online functionality
+ ![](./assets/onlineApp.png) 
 
- ### Login/Logout page
- ![](./assets/loginPage.png) 
+ ##  Offline functionality
+ ![](./assets/offline.png) 
 
- ### Comment page
- ![](./assets/commentPage.png) 
+ ## Offline to online functionality
+ ![](./assets/offlineToOnline.png) 
 
- ### Edit page
- ![](./assets/editPage.png) 
+ 
 
 ## Technologies 
 - [Mongoose](https://www.npmjs.com/package/mongoose) It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
