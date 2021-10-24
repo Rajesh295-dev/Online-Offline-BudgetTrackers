@@ -2,7 +2,7 @@
 
 # Description
 
-This app will let to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+This app will let user to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
 ## Technologies 
 - [Mongoose](https://www.npmjs.com/package/mongoose) It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB.
@@ -10,7 +10,7 @@ This app will let to add expenses and deposits to their budget with or without a
 - [Compression](https://www.npmjs.com/package/compression) It increases the performance of application by reducing the documents size up to 70%.
 - [express.js](https://www.npmjs.com/package/express) It allows to define routes of application based on HTTP methods and URLs.
 - [Node.js](https://nodejs.org/en/docs/) It address bulk requests that are handled through callback functions to ensure quality and quantity.
-- [MongoDB](https://www.mongodb.com)It stores data with dynamic schema which provides high performance, high availability, and automatic scaling.
+- [MongoDB](https://www.mongodb.com) It stores data with dynamic schema which provides high performance, high availability, and automatic scaling.
 
 
 
